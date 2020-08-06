@@ -100,7 +100,7 @@ function operate(){
             a = a.filter(function(e){return e}); 
            // function to avoid to invalid expressions
             for(i=0; i<a.length;i=i+2){
-                if((a[i]==0)||a[0]=="+"||a[0]=="-"||a[0]=="/"||a[0]=="*"){
+                if((!(a[i]>0))||a[0]=="+"||a[0]=="-"||a[0]=="/"||a[0]=="*"){
                     console.log(a[i]);
                     display.textContent = "Invalid";
                     valid = 0;
