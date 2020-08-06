@@ -8,7 +8,7 @@ let decToggle = 0;
 
 for( let i=0; i<buttons.length;i++){
 
-    buttons[i].addEventListener("click", function(){
+    buttons[i].addEventListener("mousedown", function(){
         
         if(this.classList.contains("num")||this.classList.contains("ops")){
             numInput(buttons[i].value);
